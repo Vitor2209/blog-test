@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monte seu setup de programador sem gastar dinheiro à toa. Guia completo com os melhores notebooks, periféricos e dicas para iniciantes em programação.">
+    <meta name="keywords" content="setup programador, notebook para programar, periféricos programação, melhor notebook custo benefício">
+    <meta name="author" content="Setup de Programador">
+    <title>Setup de Programador | Guia Completo para Iniciantes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header" data-testid="main-header">
+        <div class="container header-container">
+            <a href="#hero" class="logo" data-testid="logo-link">
+                <div class="logo-icon">
+                    <i data-lucide="terminal"></i>
+                </div>
+                <span class="logo-text">
+                    <span class="logo-highlight">Setup</span> de Programador
+                </span>
+            </a>
+
+            <nav class="nav-desktop" data-testid="desktop-nav">
+                <a href="#hero" class="nav-link" data-testid="nav-pagina-inicial">Pagina Inicial</a>
+                <a href="#recommendations" class="nav-link" data-testid="nav-perifericos">Perifericos</a>
+                <a href="#course" class="nav-link" data-testid="nav-programacao">Programacao</a>
+                <a href="#comparator" class="nav-link" data-testid="nav-comparador">Comparador</a>
+            </nav>
+
+            <div class="header-cta-desktop">
+                <a href="#lead-capture" class="btn-primary btn-sm" data-testid="header-cta-button">
+                    GUIA PARA INICIANTES
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" data-testid="mobile-menu-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu" id="menuIcon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" data-testid="mobile-menu">
+        <div class="container">
+            <div class="mobile-menu-header">
+                <button class="mobile-menu-close" id="mobileMenuClose" data-testid="mobile-menu-close" aria-label="Close menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#hero" class="mobile-nav-link" data-testid="mobile-nav-pagina-inicial">Pagina Inicial</a>
+                <a href="#recommendations" class="mobile-nav-link" data-testid="mobile-nav-perifericos">Perifericos</a>
+                <a href="#course" class="mobile-nav-link" data-testid="mobile-nav-programacao">Programacao</a>
+                <a href="#comparator" class="mobile-nav-link" data-testid="mobile-nav-comparador">Comparador</a>
+                <a href="#lead-capture" class="btn-primary mobile-cta" data-testid="mobile-cta-button">
+                    GUIA PARA INICIANTES
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero gradient-overlay" data-testid="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left Content -->
+                    <div class="hero-content animate-fade-in-up" data-testid="hero-content">
+                        <!-- Social Proof -->
+                        <div class="social-proof" data-testid="social-proof">
+                            <div class="avatar-stack">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="User">
+                            </div>
+                            <span class="social-proof-text">
+                                <span class="highlight">+5.000</span> leitores por mes
+                            </span>
+                        </div>
+
+                        <!-- Headline -->
+                        <h1 class="hero-headline" data-testid="hero-headline">
+                            Monte Seu Setup de Programador <span class="highlight">Sem Gastar Dinheiro a Toa</span>
+                        </h1>
+
+                        <!-- Subheadline -->
+                        <p class="hero-subheadline" data-testid="hero-subheadline">
+                            Descubra exatamente quais equipamentos voce precisa para comecar na programacao em 2026.
+                        </p>
+
+                        <!-- Benefits -->
+                        <ul class="benefits-list" data-testid="hero-benefits">
+                            <li class="benefit-item" data-testid="benefit-0">
+                                <i data-lucide="check-circle" class="benefit-icon"></i>
+                                <span>Evite comprar notebook errado</span>
+                            </li>
+                            <li class="benefit-item" data-testid="benefit-1">
+                                <i data-lucide="check-circle" class="benefit-icon"></i>
+                                <span>Economize ate R$2.000</span>
+                            </li>
+                            <li class="benefit-item" data-testid="benefit-2">
+                                <i data-lucide="check-circle" class="benefit-icon"></i>
+                                <span>Comece com o equipamento certo</span>
+                            </li>
+                        </ul>
+
+                        <!-- CTAs -->
+                        <div class="hero-ctas">
+                            <a href="#recommendations" class="btn-primary btn-lg animate-glow" data-testid="hero-primary-cta">
+                                VER O GUIA COMPLETO
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="#comparator" class="btn-secondary" data-testid="hero-secondary-cta">
+                                Comparar Notebooks Agora
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="hero-image-container animate-fade-in-up stagger-2" data-testid="hero-image-container">
+                        <div class="hero-image scanlines">
+                            <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=800&q=80" 
+                                 alt="Setup de programador profissional" 
+                                 data-testid="hero-image">
+                            <div class="hero-image-glow"></div>
+                        </div>
+
+                        <!-- Floating card -->
+                        <div class="floating-card animate-fade-in-up stagger-4" data-testid="floating-card">
+                            <div class="floating-card-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="floating-card-content">
+                                <p class="floating-card-label">Comunidade ativa</p>
+                                <p class="floating-card-value">+2.500 devs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mistakes Section -->
+        <section id="mistakes" class="mistakes-section" data-testid="mistakes-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header animate-fade-in-up">
+                    <div class="badge badge-error">
+                        <i data-lucide="x-circle"></i>
+                        <span>Erro Comum</span>
+                    </div>
+                    <h2 class="section-title" data-testid="mistakes-headline">
+                        A maioria dos iniciantes <span class="text-error">compra equipamentos errados</span>
+                    </h2>
+                    <p class="section-description">
+                        Nao cometa os mesmos erros que 80% dos iniciantes cometem ao montar seu primeiro setup.
+                    </p>
+                </div>
+
+                <!-- Mistakes Grid -->
+                <div class="mistakes-grid" data-testid="mistakes-grid">
+                    <div class="mistake-card animate-fade-in-up" data-testid="mistake-card-0">
+                        <div class="mistake-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3 class="mistake-title">Notebook fraco</h3>
+                        <p class="mistake-description">Compram notebooks com pouca RAM e processadores lentos que travam ao rodar IDEs.</p>
+                    </div>
+                    <div class="mistake-card animate-fade-in-up stagger-1" data-testid="mistake-card-1">
+                        <div class="mistake-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3 class="mistake-title">Monitor ruim</h3>
+                        <p class="mistake-description">Usam monitores pequenos e com baixa resolucao, causando cansaco visual.</p>
+                    </div>
+                    <div class="mistake-card animate-fade-in-up stagger-2" data-testid="mistake-card-2">
+                        <div class="mistake-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3 class="mistake-title">Teclado desconfortavel</h3>
+                        <p class="mistake-description">Digitam horas em teclados de membrana que causam dor e baixa produtividade.</p>
+                    </div>
+                    <div class="mistake-card animate-fade-in-up stagger-3" data-testid="mistake-card-3">
+                        <div class="mistake-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3 class="mistake-title">Gastam demais</h3>
+                        <p class="mistake-description">Investem em equipamentos caros e desnecessarios para quem esta comecando.</p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="section-cta animate-fade-in-up stagger-5">
+                    <a href="#recommendations" class="link-cta" data-testid="mistakes-cta">
+                        Veja o que realmente vale a pena comprar
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="recommendations" class="products-section" data-testid="recommendations-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="products-header">
+                    <div class="animate-fade-in-up">
+                        <div class="badge badge-primary">
+                            <i data-lucide="award"></i>
+                            <span>Top Recomendacoes</span>
+                        </div>
+                        <h2 class="section-title" data-testid="recommendations-headline">
+                            Equipamentos que <span class="highlight">realmente valem a pena</span>
+                        </h2>
+                        <p class="section-description">
+                            Selecionamos os melhores produtos com base em custo-beneficio, durabilidade e reviews de programadores reais.
+                        </p>
+                    </div>
+                    <div class="animate-fade-in-up stagger-2">
+                        <a href="#comparator" class="btn-secondary" data-testid="see-comparator-link">
+                            <i data-lucide="zap"></i>
+                            Ver Comparador Completo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" data-testid="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card animate-fade-in-up" data-testid="product-card-1">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&q=80" alt="Acer Aspire 5" data-testid="product-image-1">
+                            <span class="product-badge">Melhor Custo-Beneficio</span>
+                            <span class="product-category">
+                                <i data-lucide="monitor"></i>
+                                Notebook
+                            </span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name" data-testid="product-name-1">Acer Aspire 5</h3>
+                            <p class="product-description">Ideal para iniciantes. 8GB RAM, SSD 256GB, Ryzen 5.</p>
+                            <div class="product-rating" data-testid="product-rating-1">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-empty"></i>
+                                <span class="rating-text">4.8/5</span>
+                            </div>
+                            <div class="product-price" data-testid="product-price-1">
+                                <span class="price-current">R$ 2.899</span>
+                                <span class="price-old">R$ 3.499</span>
+                            </div>
+                            <a href="#affiliate-link" class="btn-primary btn-full" data-testid="product-cta-1">
+                                Ver Preco Atual
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card animate-fade-in-up stagger-1" data-testid="product-card-2">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=400&q=80" alt="Lenovo IdeaPad 3" data-testid="product-image-2">
+                            <span class="product-badge">Premium</span>
+                            <span class="product-category">
+                                <i data-lucide="monitor"></i>
+                                Notebook
+                            </span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name" data-testid="product-name-2">Lenovo IdeaPad 3</h3>
+                            <p class="product-description">Para quem quer mais performance. 16GB RAM, SSD 512GB.</p>
+                            <div class="product-rating" data-testid="product-rating-2">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span class="rating-text">4.9/5</span>
+                            </div>
+                            <div class="product-price" data-testid="product-price-2">
+                                <span class="price-current">R$ 3.799</span>
+                                <span class="price-old">R$ 4.299</span>
+                            </div>
+                            <a href="#affiliate-link" class="btn-primary btn-full" data-testid="product-cta-2">
+                                Ver Preco Atual
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card animate-fade-in-up stagger-2" data-testid="product-card-3">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=400&q=80" alt="Redragon Kumara K552" data-testid="product-image-3">
+                            <span class="product-badge">Mais Vendido</span>
+                            <span class="product-category">
+                                <i data-lucide="keyboard"></i>
+                                Teclado
+                            </span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name" data-testid="product-name-3">Redragon Kumara K552</h3>
+                            <p class="product-description">Teclado mecanico com switches blue. Otimo para digitar.</p>
+                            <div class="product-rating" data-testid="product-rating-3">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-empty"></i>
+                                <span class="rating-text">4.7/5</span>
+                            </div>
+                            <div class="product-price" data-testid="product-price-3">
+                                <span class="price-current">R$ 199</span>
+                                <span class="price-old">R$ 279</span>
+                            </div>
+                            <a href="#affiliate-link" class="btn-primary btn-full" data-testid="product-cta-3">
+                                Ver Preco Atual
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card animate-fade-in-up stagger-3" data-testid="product-card-4">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&q=80" alt="LG 24MK430H" data-testid="product-image-4">
+                            <span class="product-badge">Recomendado</span>
+                            <span class="product-category">
+                                <i data-lucide="monitor"></i>
+                                Monitor
+                            </span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-name" data-testid="product-name-4">LG 24MK430H</h3>
+                            <p class="product-description">Monitor IPS Full HD 24". Cores precisas e angulo amplo.</p>
+                            <div class="product-rating" data-testid="product-rating-4">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-filled"></i>
+                                <i data-lucide="star" class="star-empty"></i>
+                                <span class="rating-text">4.6/5</span>
+                            </div>
+                            <div class="product-price" data-testid="product-price-4">
+                                <span class="price-current">R$ 699</span>
+                                <span class="price-old">R$ 899</span>
+                            </div>
+                            <a href="#affiliate-link" class="btn-primary btn-full" data-testid="product-cta-4">
+                                Ver Preco Atual
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Capture Section -->
+        <section id="lead-capture" class="lead-capture-section" data-testid="lead-capture-section">
+            <div class="container">
+                <div class="lead-capture-box" data-testid="lead-capture-box">
+                    <div class="lead-capture-grid">
+                        <!-- Left Content -->
+                        <div class="lead-capture-content animate-fade-in-up">
+                            <div class="badge badge-primary">
+                                <i data-lucide="sparkles"></i>
+                                <span>Gratis</span>
+                            </div>
+                            <h2 class="lead-capture-title" data-testid="lead-capture-headline">
+                                Quer Receber a Lista Atualizada de <span class="highlight">Equipamentos Recomendados?</span>
+                            </h2>
+                            <p class="lead-capture-description">
+                                Receba nosso guia gratuito com as melhores dicas para comecar na programacao e montar seu setup ideal. Atualizado mensalmente!
+                            </p>
+                            <ul class="lead-capture-benefits">
+                                <li>
+                                    <i data-lucide="check-circle" class="benefit-icon-sm"></i>
+                                    Lista dos melhores notebooks de 2026
+                                </li>
+                                <li>
+                                    <i data-lucide="check-circle" class="benefit-icon-sm"></i>
+                                    Dicas exclusivas de economia
+                                </li>
+                                <li>
+                                    <i data-lucide="check-circle" class="benefit-icon-sm"></i>
+                                    Cupons de desconto especiais
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Form -->
+                        <div class="lead-capture-form-container animate-fade-in-up stagger-2">
+                            <form id="leadCaptureForm" class="lead-capture-form" data-testid="lead-capture-form">
+                                <div class="form-group">
+                                    <div class="input-wrapper">
+                                        <i data-lucide="mail" class="input-icon"></i>
+                                        <input type="email" 
+                                               id="emailInput" 
+                                               placeholder="Digite seu melhor email..." 
+                                               required
+                                               data-testid="email-input">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-primary btn-full" data-testid="submit-button">
+                                    <i data-lucide="download"></i>
+                                    BAIXAR GUIA GRATUITO
+                                </button>
+                                <p class="form-disclaimer">
+                                    Nao enviamos spam. Voce pode cancelar a qualquer momento.
+                                </p>
+                            </form>
+
+                            <!-- Success Message (hidden by default) -->
+                            <div id="successMessage" class="success-message hidden" data-testid="success-message">
+                                <div class="success-icon">
+                                    <i data-lucide="check-circle"></i>
+                                </div>
+                                <h3>Guia enviado para seu email!</h3>
+                                <p>Verifique sua caixa de entrada e spam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparator Section -->
+        <section id="comparator" class="comparator-section" data-testid="comparator-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header animate-fade-in-up">
+                    <div class="badge badge-primary">
+                        <i data-lucide="cpu"></i>
+                        <span>Comparador</span>
+                    </div>
+                    <h2 class="section-title" data-testid="comparator-headline">
+                        Descubra Qual Notebook Ideal para <span class="highlight">Programar</span>
+                    </h2>
+                    <p class="section-description">
+                        Compare notebooks para programacao e escolha o melhor custo-beneficio.
+                    </p>
+                </div>
+
+                <!-- Comparator Box -->
+                <div class="comparator-container" data-testid="comparator-box">
+                    <!-- Selectors -->
+                    <div class="comparator-selectors">
+                        <div class="selector-group animate-fade-in-up">
+                            <label for="notebook1">Notebook 1</label>
+                            <select id="notebook1" class="comparator-select" data-testid="notebook1-select">
+                                <option value="">Selecione um notebook...</option>
+                                <option value="acer-aspire-5">Acer Aspire 5 - R$2.899</option>
+                                <option value="lenovo-ideapad-3">Lenovo IdeaPad 3 - R$3.799</option>
+                                <option value="dell-inspiron-15">Dell Inspiron 15 - R$3.299</option>
+                                <option value="samsung-book">Samsung Book - R$4.199</option>
+                            </select>
+                        </div>
+                        <div class="selector-group animate-fade-in-up stagger-1">
+                            <label for="notebook2">Notebook 2</label>
+                            <select id="notebook2" class="comparator-select" data-testid="notebook2-select">
+                                <option value="">Selecione um notebook...</option>
+                                <option value="acer-aspire-5">Acer Aspire 5 - R$2.899</option>
+                                <option value="lenovo-ideapad-3">Lenovo IdeaPad 3 - R$3.799</option>
+                                <option value="dell-inspiron-15">Dell Inspiron 15 - R$3.299</option>
+                                <option value="samsung-book">Samsung Book - R$4.199</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Compare Button -->
+                    <div class="comparator-button animate-fade-in-up stagger-2">
+                        <button id="compareButton" class="btn-primary btn-xl" data-testid="compare-button" disabled>
+                            COMPARAR AGORA
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Features List -->
+                    <div class="comparator-features">
+                        <span>
+                            <i data-lucide="check-circle" class="feature-icon"></i>
+                            Compare notebooks para programacao
+                        </span>
+                        <span>
+                            <i data-lucide="check-circle" class="feature-icon"></i>
+                            Descubra o melhor custo-beneficio
+                        </span>
+                        <span>
+                            <i data-lucide="check-circle" class="feature-icon"></i>
+                            Compare preco da Amazon
+                        </span>
+                    </div>
+
+                    <!-- Comparison Results (hidden by default) -->
+                    <div id="comparisonResult" class="comparison-result hidden" data-testid="comparison-result">
+                        <h3 class="comparison-title">Resultado da Comparacao</h3>
+                        <div class="comparison-table" id="comparisonTable">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                        <div class="comparison-ctas" id="comparisonCtas">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Upsell Section -->
+        <section id="course" class="course-section" data-testid="course-section">
+            <div class="container">
+                <div class="course-grid">
+                    <!-- Left Content -->
+                    <div class="course-content animate-fade-in-up" data-testid="course-content">
+                        <div class="badge badge-primary">
+                            <i data-lucide="code"></i>
+                            <span>Proximo Passo</span>
+                        </div>
+                        <h2 class="course-title" data-testid="course-headline">
+                            Ja tem o Setup? <span class="highlight">Agora Aprenda a Programar do Zero.</span>
+                        </h2>
+                        <p class="course-description">
+                            Nao adianta ter o melhor equipamento se voce nao souber programar. Aprenda do zero com nosso curso recomendado e comece sua carreira como desenvolvedor.
+                        </p>
+
+                        <!-- Features -->
+                        <div class="course-features">
+                            <div class="course-feature" data-testid="course-feature-0">
+                                <div class="course-feature-icon">
+                                    <i data-lucide="play-circle"></i>
+                                </div>
+                                <span>+50 horas de conteudo</span>
+                            </div>
+                            <div class="course-feature" data-testid="course-feature-1">
+                                <div class="course-feature-icon">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <span>Comunidade exclusiva</span>
+                            </div>
+                            <div class="course-feature" data-testid="course-feature-2">
+                                <div class="course-feature-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <span>Acesso vitalicio</span>
+                            </div>
+                            <div class="course-feature" data-testid="course-feature-3">
+                                <div class="course-feature-icon">
+                                    <i data-lucide="star"></i>
+                                </div>
+                                <span>Certificado de conclusao</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <a href="#affiliate-link" class="btn-primary btn-lg animate-glow" data-testid="course-cta">
+                            VER CURSO RECOMENDADO
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Right Card -->
+                    <div class="course-card-container animate-fade-in-up stagger-2" data-testid="course-image">
+                        <div class="course-card">
+                            <div class="course-card-image">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80" alt="Curso de programacao">
+                                <div class="course-card-overlay"></div>
+                                <div class="course-card-play">
+                                    <i data-lucide="play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="course-card-content">
+                                <h3>Programacao do Zero ao Avancado</h3>
+                                <p>Aprenda HTML, CSS, JavaScript, React e muito mais. Do iniciante ao profissional.</p>
+                                <div class="course-card-rating">
+                                    <div class="stars">
+                                        <i data-lucide="star" class="star-filled"></i>
+                                        <i data-lucide="star" class="star-filled"></i>
+                                        <i data-lucide="star" class="star-filled"></i>
+                                        <i data-lucide="star" class="star-filled"></i>
+                                        <i data-lucide="star" class="star-filled"></i>
+                                    </div>
+                                    <span>4.9 (2.847 avaliacoes)</span>
+                                </div>
+                                <div class="course-card-price">
+                                    <div class="price-info">
+                                        <span class="price-value">R$ 97</span>
+                                        <span class="price-old">R$ 297</span>
+                                    </div>
+                                    <span class="discount-badge">67% OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <div class="logo-icon">
+                            <i data-lucide="terminal"></i>
+                        </div>
+                        <span class="logo-text">
+                            <span class="logo-highlight">Setup</span> de Programador
+                        </span>
+                    </a>
+                    <p class="footer-description">
+                        Ajudamos iniciantes em programacao a montar o setup ideal sem gastar dinheiro a toa. Recomendacoes honestas e sem enrolacao.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" data-testid="social-instagram" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" data-testid="social-youtube" aria-label="YouTube">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" data-testid="social-twitter" aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" data-testid="social-email" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links - Recursos -->
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#recommendations" data-testid="footer-link-guia-de-notebooks">Guia de Notebooks</a></li>
+                        <li><a href="#comparator">Comparador</a></li>
+                        <li><a href="#recommendations">Perifericos</a></li>
+                        <li><a href="#course">Cursos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links - Sobre -->
+                <div class="footer-links">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Politica de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Setup de Programador. Todos os direitos reservados.</p>
+                <p>Links de afiliados: ganhamos comissao em algumas vendas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
