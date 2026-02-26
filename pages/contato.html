@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com o Tec Brasil - Envie suas sugestões, dúvidas ou propostas de parceria.">
+    <title>Contato | Tec Brasil</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-testid="contact-page">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container header-top-inner">
+                <a href="/" class="logo">
+                    <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                    <span class="logo-text">Tec Brasil</span>
+                </a>
+                
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <button class="dark-mode-toggle" id="darkModeToggle" data-testid="dark-mode-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav" id="mainNav">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="categoria.html?cat=noticias"><i class="fas fa-newspaper"></i> Notícias</a></li>
+                    <li><a href="categoria.html?cat=reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="categoria.html?cat=guias"><i class="fas fa-book"></i> Guias</a></li>
+                    <li><a href="contato.html" class="active"><i class="fas fa-envelope"></i> Contato</a></li>
+                    <li class="nav-cta"><a href="categoria.html?cat=ofertas"><i class="fas fa-tag"></i> Ofertas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero" data-testid="contact-hero">
+        <div class="container">
+            <h1>Fale Conosco</h1>
+            <p>Tem alguma dúvida, sugestão ou proposta? Ficaremos felizes em ouvir você!</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <main class="main-content">
+        <div class="contact-content" data-testid="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form" data-testid="contact-form">
+                <h2 style="margin-bottom: var(--spacing-lg);">Envie sua mensagem</h2>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome completo *</label>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Assunto *</label>
+                        <select id="subject" name="subject" required style="width: 100%; padding: var(--spacing-md); background: var(--background); border: 1px solid var(--border); border-radius: var(--radius); font-size: 1rem; color: var(--text-primary);">
+                            <option value="">Selecione um assunto</option>
+                            <option value="sugestao">Sugestão de pauta</option>
+                            <option value="parceria">Proposta de parceria</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="problema">Reportar problema</option>
+                            <option value="trabalho">Trabalhe conosco</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem *</label>
+                        <textarea id="message" name="message" required placeholder="Escreva sua mensagem..." data-testid="contact-message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block" data-testid="contact-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info Cards -->
+            <div class="contact-info-grid" data-testid="contact-info">
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>E-mail</h4>
+                    <p>contato@tecbrasil.com.br</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Telefone</h4>
+                    <p>(11) 9999-9999</p>
+                </div>
+                
+                <div class="contact-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Endereço</h4>
+                    <p>São Paulo, SP - Brasil</p>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div style="margin-top: var(--spacing-2xl);">
+                <h2 style="margin-bottom: var(--spacing-lg);">Perguntas Frequentes</h2>
+                
+                <div style="display: flex; flex-direction: column; gap: var(--spacing-md);">
+                    <details style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--spacing-md);">
+                        <summary style="font-family: var(--font-heading); font-weight: 600; cursor: pointer;">Como posso sugerir uma pauta?</summary>
+                        <p style="margin-top: var(--spacing-md); color: var(--text-secondary);">Você pode sugerir pautas através do formulário acima, selecionando "Sugestão de pauta" no campo de assunto. Analisamos todas as sugestões e entramos em contato quando relevante.</p>
+                    </details>
+                    
+                    <details style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--spacing-md);">
+                        <summary style="font-family: var(--font-heading); font-weight: 600; cursor: pointer;">Vocês fazem reviews de produtos enviados?</summary>
+                        <p style="margin-top: var(--spacing-md); color: var(--text-secondary);">Sim, aceitamos produtos para review de empresas e assessorias de imprensa. Entre em contato através do formulário selecionando "Proposta de parceria" e envie as informações do produto.</p>
+                    </details>
+                    
+                    <details style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--spacing-md);">
+                        <summary style="font-family: var(--font-heading); font-weight: 600; cursor: pointer;">Como funciona o programa de afiliados?</summary>
+                        <p style="margin-top: var(--spacing-md); color: var(--text-secondary);">Participamos de programas de afiliados de grandes varejistas. Quando você clica em nossos links e realiza uma compra, podemos receber uma pequena comissão sem custo adicional para você. Isso ajuda a manter nosso conteúdo gratuito.</p>
+                    </details>
+                    
+                    <details style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--spacing-md);">
+                        <summary style="font-family: var(--font-heading); font-weight: 600; cursor: pointer;">Posso republicar conteúdo do Tec Brasil?</summary>
+                        <p style="margin-top: var(--spacing-md); color: var(--text-secondary);">Todo conteúdo do Tec Brasil é protegido por direitos autorais. Para republicação, entre em contato conosco solicitando autorização formal.</p>
+                    </details>
+                    
+                    <details style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--spacing-md);">
+                        <summary style="font-family: var(--font-heading); font-weight: 600; cursor: pointer;">Vocês estão contratando?</summary>
+                        <p style="margin-top: var(--spacing-md); color: var(--text-secondary);">Estamos sempre em busca de talentos! Se você é apaixonado por tecnologia e tem experiência com redação, entre em contato selecionando "Trabalhe conosco" no formulário acima.</p>
+                    </details>
+                </div>
+            </div>
+            
+            <!-- Social Follow -->
+            <div style="margin-top: var(--spacing-2xl); text-align: center; padding: var(--spacing-xl); background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border);">
+                <h3 style="margin-bottom: var(--spacing-md);">Siga-nos nas redes sociais</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--spacing-lg);">Fique por dentro das novidades em tempo real!</p>
+                <div style="display: flex; justify-content: center; gap: var(--spacing-md);">
+                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: #ff0000; color: white; border-radius: var(--radius-full); font-size: 1.25rem;"><i class="fab fa-youtube"></i></a>
+                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: #1877f2; color: white; border-radius: var(--radius-full); font-size: 1.25rem;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: #1da1f2; color: white; border-radius: var(--radius-full); font-size: 1.25rem;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-radius: var(--radius-full); font-size: 1.25rem;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: #000; color: white; border-radius: var(--radius-full); font-size: 1.25rem;"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                        <span class="logo-text">Tec Brasil</span>
+                    </a>
+                    <p>O melhor portal de tecnologia do Brasil.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="categoria.html?cat=smartphones">Smartphones</a></li>
+                        <li><a href="categoria.html?cat=computadores">Computadores</a></li>
+                        <li><a href="categoria.html?cat=gadgets">Gadgets</a></li>
+                        <li><a href="categoria.html?cat=games">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contato@tecbrasil.com.br</li>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tec Brasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="close-modal" id="closeSearchModal"><i class="fas fa-times"></i></button>
+            <h3>Buscar no Tec Brasil</h3>
+            <div class="search-form">
+                <input type="text" id="modalSearchInput" placeholder="Digite sua busca...">
+                <button type="button" id="modalSearchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/filters.js"></script>
+</body>
+</html>

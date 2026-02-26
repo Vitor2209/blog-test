@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confira os melhores artigos e notícias sobre tecnologia. Reviews, guias e tutoriais atualizados.">
+    <meta name="keywords" content="tecnologia, notícias, reviews, smartphones, gadgets">
+    <title>Notícias de Tecnologia | Tec Brasil</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-testid="category-page">
+    <!-- Header -->
+    <header class="header" id="header" data-testid="main-header">
+        <div class="header-top">
+            <div class="container header-top-inner">
+                <a href="/" class="logo" data-testid="logo">
+                    <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                    <span class="logo-text">Tec Brasil</span>
+                </a>
+                
+                <div class="search-bar" data-testid="search-bar">
+                    <input type="text" id="searchInput" placeholder="Buscar..." data-testid="search-input">
+                    <button type="button" id="searchBtn" data-testid="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    <button class="dark-mode-toggle" id="darkModeToggle" data-testid="dark-mode-toggle" aria-label="Alternar modo escuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" data-testid="mobile-menu-btn" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav" id="mainNav" data-testid="main-nav">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/"><i class="fas fa-home"></i> Início</a></li>
+                    <li class="has-dropdown">
+                        <a href="categoria.html?cat=noticias" class="active"><i class="fas fa-newspaper"></i> Notícias <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="categoria.html?cat=smartphones">Smartphones</a></li>
+                            <li><a href="categoria.html?cat=computadores">Computadores</a></li>
+                            <li><a href="categoria.html?cat=games">Games</a></li>
+                            <li><a href="categoria.html?cat=software">Software</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="categoria.html?cat=reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="categoria.html?cat=guias"><i class="fas fa-book"></i> Guias</a></li>
+                    <li><a href="categoria.html?cat=comparativos"><i class="fas fa-balance-scale"></i> Comparativos</a></li>
+                    <li><a href="categoria.html?cat=tutoriais"><i class="fas fa-graduation-cap"></i> Tutoriais</a></li>
+                    <li><a href="categoria.html?cat=games"><i class="fas fa-gamepad"></i> Games</a></li>
+                    <li class="nav-cta"><a href="categoria.html?cat=ofertas" data-testid="ofertas-btn"><i class="fas fa-tag"></i> Ofertas do Dia</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="sub-nav">
+            <div class="container">
+                <ul class="sub-nav-menu">
+                    <li><a href="categoria.html?cat=smartphones">SMARTPHONES</a></li>
+                    <li><a href="categoria.html?cat=gadgets">GADGETS</a></li>
+                    <li><a href="categoria.html?cat=computadores">COMPUTADORES</a></li>
+                    <li><a href="categoria.html?cat=televisoes">TELEVISÕES</a></li>
+                    <li><a href="categoria.html?cat=games">GAMES</a></li>
+                    <li><a href="categoria.html?cat=audio">ÁUDIO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb" data-testid="breadcrumb">
+                <a href="/">Início</a>
+                <i class="fas fa-chevron-right"></i>
+                <span id="categoryName">Notícias</span>
+            </nav>
+            <h1 class="page-title" id="pageTitle" data-testid="page-title">Notícias de Tecnologia</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="content-grid">
+                    <!-- Main Area -->
+                    <div class="main-area">
+                        <!-- Filter Bar -->
+                        <div class="filter-bar" data-testid="filter-bar">
+                            <div class="filter-group">
+                                <span class="filter-label">Ordenar por:</span>
+                                <select id="filterSelect" class="filter-select" data-testid="filter-select">
+                                    <option value="recentes">Mais Recentes</option>
+                                    <option value="mais-lidas">Mais Lidas</option>
+                                    <option value="melhor-avaliadas">Melhor Avaliadas</option>
+                                </select>
+                            </div>
+                            
+                            <div class="view-toggle" data-testid="view-toggle">
+                                <button class="view-btn" data-columns="1" title="Uma coluna">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <button class="view-btn active" data-columns="2" title="Duas colunas">
+                                    <i class="fas fa-th-large"></i>
+                                </button>
+                                <button class="view-btn" data-columns="3" title="Três colunas">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Articles Grid -->
+                        <div class="articles-grid" data-columns="2" data-testid="articles-grid">
+                            <!-- Article 1 -->
+                            <article class="news-card" data-testid="article-1">
+                                <a href="artigo.html" class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1764744224150-5d54a48f7947?w=600" alt="iPhone 16 Pro Max" loading="lazy">
+                                    <span class="card-category">REVIEWS</span>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="artigo.html">iPhone 16 Pro Max: Análise Completa do Novo Flagship da Apple</a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <span><i class="far fa-calendar"></i> 26 de Janeiro de 2026</span>
+                                        <span><i class="far fa-clock"></i> 12 min</span>
+                                        <span class="view-counter"><i class="far fa-eye"></i> <span data-views="15432">15.4K</span></span>
+                                    </div>
+                                    <p class="card-excerpt">Review completo com prós e contras do mais novo lançamento da Apple. Confira se vale a pena atualizar.</p>
+                                    <a href="artigo.html" class="card-btn">Continuar Lendo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 2 -->
+                            <article class="news-card" data-testid="article-2">
+                                <a href="artigo.html" class="card-image">
+                                    <img src="https://images.pexels.com/photos/35147239/pexels-photo-35147239.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fones Bluetooth" loading="lazy">
+                                    <span class="card-category">COMPARATIVO</span>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="artigo.html">Melhores Fones de Ouvido Bluetooth Custo-Benefício de 2026</a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <span><i class="far fa-calendar"></i> 25 de Janeiro de 2026</span>
+                                        <span><i class="far fa-clock"></i> 8 min</span>
+                                        <span class="view-counter"><i class="far fa-eye"></i> <span data-views="12543">12.5K</span></span>
+                                    </div>
+                                    <p class="card-excerpt">Selecionamos os melhores fones de ouvido do mercado com excelente relação custo-benefício.</p>
+                                    <a href="artigo.html" class="card-btn">Continuar Lendo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 3 -->
+                            <article class="news-card" data-testid="article-3">
+                                <a href="artigo.html" class="card-image">
+                                    <img src="https://images.pexels.com/photos/9794458/pexels-photo-9794458.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Setup Gamer" loading="lazy">
+                                    <span class="card-category">GUIAS</span>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="artigo.html">Como Montar o Setup Gamer Perfeito em 2026</a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <span><i class="far fa-calendar"></i> 24 de Janeiro de 2026</span>
+                                        <span><i class="far fa-clock"></i> 15 min</span>
+                                        <span class="view-counter"><i class="far fa-eye"></i> <span data-views="8721">8.7K</span></span>
+                                    </div>
+                                    <p class="card-excerpt">Guia completo para montar seu setup dos sonhos sem gastar uma fortuna. Confira todas as dicas.</p>
+                                    <a href="artigo.html" class="card-btn">Continuar Lendo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 4 -->
+                            <article class="news-card" data-testid="article-4">
+                                <a href="artigo.html" class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1692663732610-dce180040495?w=600" alt="Windows 12" loading="lazy">
+                                    <span class="card-category">NOTÍCIAS</span>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="artigo.html">Windows 12: Tudo Sobre o Novo Sistema Operacional da Microsoft</a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <span><i class="far fa-calendar"></i> 23 de Janeiro de 2026</span>
+                                        <span><i class="far fa-clock"></i> 6 min</span>
+                                        <span class="view-counter"><i class="far fa-eye"></i> <span data-views="9854">9.8K</span></span>
+                                    </div>
+                                    <p class="card-excerpt">Saiba tudo sobre as novidades do Windows 12, incluindo interface renovada e recursos de IA.</p>
+                                    <a href="artigo.html" class="card-btn">Continuar Lendo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 5 -->
+                            <article class="news-card" data-testid="article-5">
+                                <a href="artigo.html" class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1632064824547-e77c36851495?w=600" alt="Monitor 4K" loading="lazy">
+                                    <span class="card-category">REVIEWS</span>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="artigo.html">Review: Melhor Monitor 4K para Jogos em 2026</a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <span><i class="far fa-calendar"></i> 22 de Janeiro de 2026</span>
+                                        <span><i class="far fa-clock"></i> 10 min</span>
+                                        <span class="view-counter"><i class="far fa-eye"></i> <span data-views="7632">7.6K</span></span>
+                                    </div>
+                                    <p class="card-excerpt">Testamos os melhores monitores 4K para gaming. Confira qual oferece a melhor experiência.</p>
+                                    <a href="artigo.html" class="card-btn">Continuar Lendo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            
+                            <!-- Article 6 -->
+                            <article class="news-card" data-testid="article-6">
+                                <a href="artigo.html" class="card-image">
+                                    <img src="https://images.unsplash.com/photo-1758525747606-bd5d801ca87b?w=600" alt="Alexa Smart Home" loading="lazy">
+                                    <span class="card-category">TUTORIAIS</span>
+                                </a>
+                                <div class="card-content">
+                                    <h3 class="card-title">
+                                        <a href="artigo.html">Como Configurar Alexa para Controlar Dispositivos Inteligentes</a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <span><i class="far fa-calendar"></i> 21 de Janeiro de 2026</span>
+                                        <span><i class="far fa-clock"></i> 8 min</span>
+                                        <span class="view-counter"><i class="far fa-eye"></i> <span data-views="5421">5.4K</span></span>
+                                    </div>
+                                    <p class="card-excerpt">Tutorial completo para configurar sua Alexa e transformar sua casa em um smart home.</p>
+                                    <a href="artigo.html" class="card-btn">Continuar Lendo <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Pagination -->
+                        <nav class="pagination" data-testid="pagination">
+                            <button class="pagination-btn prev" disabled><i class="fas fa-chevron-left"></i></button>
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">4</button>
+                            <button class="pagination-btn">5</button>
+                            <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                        </nav>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="sidebar" data-testid="sidebar">
+                        <!-- Ofertas -->
+                        <div class="sidebar-widget offers-widget">
+                            <h3 class="widget-title"><i class="fas fa-fire"></i> OFERTAS DO DIA</h3>
+                            
+                            <div class="offer-card">
+                                <a href="produto.html" class="offer-image">
+                                    <img src="https://images.unsplash.com/photo-1692663732610-dce180040495?w=200" alt="Razer BlackWidow" loading="lazy">
+                                </a>
+                                <div class="offer-content">
+                                    <h4 class="offer-title"><a href="produto.html">Razer BlackWidow V3</a></h4>
+                                    <div class="offer-price">
+                                        <span class="price-current">R$ 499</span>
+                                        <span class="price-old">R$ 699</span>
+                                    </div>
+                                    <a href="produto.html" class="btn btn-affiliate">COMPRAR</a>
+                                </div>
+                            </div>
+                            
+                            <a href="categoria.html?cat=ofertas" class="widget-link">Ver todas <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        
+                        <!-- Banner Ads -->
+                        <div class="sidebar-widget ads-widget">
+                            <div class="ads-placeholder">
+                                <span>PUBLICIDADE</span>
+                                <div class="ads-box">
+                                    <i class="fas fa-ad"></i>
+                                    <p>Espaço para Google Ads</p>
+                                    <small>300x250</small>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                        <span class="logo-text">Tec Brasil</span>
+                    </a>
+                    <p>O melhor portal de tecnologia do Brasil.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="categoria.html?cat=smartphones">Smartphones</a></li>
+                        <li><a href="categoria.html?cat=computadores">Computadores</a></li>
+                        <li><a href="categoria.html?cat=gadgets">Gadgets</a></li>
+                        <li><a href="categoria.html?cat=games">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contato@tecbrasil.com.br</li>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tec Brasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="close-modal" id="closeSearchModal"><i class="fas fa-times"></i></button>
+            <h3>Buscar no Tec Brasil</h3>
+            <div class="search-form">
+                <input type="text" id="modalSearchInput" placeholder="Digite sua busca...">
+                <button type="button" id="modalSearchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/filters.js"></script>
+    
+    <script>
+        // Atualizar título da página baseado no parâmetro da URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const cat = params.get('cat');
+            
+            const categories = {
+                'noticias': 'Notícias de Tecnologia',
+                'reviews': 'Reviews de Produtos',
+                'guias': 'Guias e Tutoriais',
+                'comparativos': 'Comparativos',
+                'tutoriais': 'Tutoriais',
+                'games': 'Games e Jogos',
+                'ofertas': 'Melhores Ofertas',
+                'smartphones': 'Smartphones',
+                'computadores': 'Computadores',
+                'gadgets': 'Gadgets',
+                'televisoes': 'Televisões',
+                'audio': 'Áudio'
+            };
+            
+            if (cat && categories[cat]) {
+                document.getElementById('pageTitle').textContent = categories[cat];
+                document.getElementById('categoryName').textContent = categories[cat];
+                document.title = categories[cat] + ' | Tec Brasil';
+            }
+        });
+    </script>
+</body>
+</html>

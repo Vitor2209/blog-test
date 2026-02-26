@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre o Tec Brasil - Conheça a história e a equipe por trás do maior portal de tecnologia do Brasil.">
+    <title>Sobre Nós | Tec Brasil</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-testid="about-page">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="container header-top-inner">
+                <a href="/" class="logo">
+                    <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                    <span class="logo-text">Tec Brasil</span>
+                </a>
+                
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <button class="dark-mode-toggle" id="darkModeToggle" data-testid="dark-mode-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav" id="mainNav">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="categoria.html?cat=noticias"><i class="fas fa-newspaper"></i> Notícias</a></li>
+                    <li><a href="categoria.html?cat=reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="categoria.html?cat=guias"><i class="fas fa-book"></i> Guias</a></li>
+                    <li><a href="sobre.html" class="active"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li class="nav-cta"><a href="categoria.html?cat=ofertas"><i class="fas fa-tag"></i> Ofertas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero" data-testid="about-hero">
+        <div class="container">
+            <h1>Sobre o Tec Brasil</h1>
+            <p>Desde 2015 trazendo as melhores notícias, reviews e ofertas de tecnologia para você.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <main class="main-content">
+        <div class="about-content" data-testid="about-content">
+            <h2>Nossa História</h2>
+            <p>O <strong>Tec Brasil</strong> nasceu em 2015 com uma missão clara: democratizar o acesso à informação sobre tecnologia no Brasil. Começamos como um pequeno blog e, ao longo dos anos, crescemos para nos tornar um dos maiores portais de tecnologia do país.</p>
+            
+            <p>Nossa equipe é formada por jornalistas especializados, entusiastas de tecnologia e analistas de mercado que trabalham incansavelmente para trazer conteúdo de qualidade, imparcial e relevante para nossos leitores.</p>
+            
+            <h2>Nossa Missão</h2>
+            <p>Acreditamos que a tecnologia deve ser acessível a todos. Por isso, nos dedicamos a:</p>
+            
+            <ul style="list-style: disc; padding-left: 2rem; margin-bottom: 1.5rem;">
+                <li>Produzir conteúdo claro e objetivo sobre produtos tecnológicos</li>
+                <li>Ajudar nossos leitores a tomar decisões de compra informadas</li>
+                <li>Apresentar as melhores ofertas e promoções do mercado</li>
+                <li>Manter nossa independência editorial em todos os reviews</li>
+            </ul>
+            
+            <h2>Nossos Números</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <i class="fas fa-users" style="font-size: 2rem; color: var(--accent); margin-bottom: 0.5rem;"></i>
+                    <h3 style="font-size: 2rem; color: var(--accent);">5M+</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Leitores mensais</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <i class="fas fa-file-alt" style="font-size: 2rem; color: var(--secondary); margin-bottom: 0.5rem;"></i>
+                    <h3 style="font-size: 2rem; color: var(--secondary);">10K+</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Artigos publicados</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <i class="fas fa-star" style="font-size: 2rem; color: var(--warning); margin-bottom: 0.5rem;"></i>
+                    <h3 style="font-size: 2rem; color: var(--warning);">2K+</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Reviews completos</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <i class="fas fa-calendar" style="font-size: 2rem; color: var(--success); margin-bottom: 0.5rem;"></i>
+                    <h3 style="font-size: 2rem; color: var(--success);">10</h3>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Anos de experiência</p>
+                </div>
+            </div>
+            
+            <h2>Nossa Equipe</h2>
+            <p>Contamos com uma equipe diversificada de profissionais apaixonados por tecnologia:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <img src="https://ui-avatars.com/api/?name=Carlos+Oliveira&background=0d9488&color=fff&size=80" alt="Carlos Oliveira" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem;">
+                    <h4 style="margin-bottom: 0.25rem;">Carlos Oliveira</h4>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Editor-Chefe</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <img src="https://ui-avatars.com/api/?name=Ana+Santos&background=155e75&color=fff&size=80" alt="Ana Santos" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem;">
+                    <h4 style="margin-bottom: 0.25rem;">Ana Santos</h4>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Editora de Reviews</p>
+                </div>
+                <div style="text-align: center; padding: 1.5rem; background: var(--surface); border-radius: 1rem; border: 1px solid var(--border);">
+                    <img src="https://ui-avatars.com/api/?name=Pedro+Lima&background=f59e0b&color=fff&size=80" alt="Pedro Lima" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 1rem;">
+                    <h4 style="margin-bottom: 0.25rem;">Pedro Lima</h4>
+                    <p style="color: var(--text-muted); font-size: 0.875rem;">Especialista em Games</p>
+                </div>
+            </div>
+            
+            <h2>Política de Afiliados</h2>
+            <p>Para manter nosso conteúdo gratuito e de alta qualidade, participamos de programas de afiliados com empresas como Amazon, Magazine Luiza, Americanas e outras. Isso significa que podemos receber uma pequena comissão quando você compra um produto através dos nossos links.</p>
+            
+            <p><strong>Importante:</strong> Isso não afeta nossa independência editorial. Nossos reviews são sempre honestos e imparciais, independentemente de parcerias comerciais.</p>
+            
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma sugestão, crítica ou quer trabalhar conosco? Entre em contato!</p>
+            
+            <a href="contato.html" class="btn btn-primary" style="margin-top: 1rem;">
+                <i class="fas fa-envelope"></i> Fale Conosco
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                        <span class="logo-text">Tec Brasil</span>
+                    </a>
+                    <p>O melhor portal de tecnologia do Brasil.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="categoria.html?cat=smartphones">Smartphones</a></li>
+                        <li><a href="categoria.html?cat=computadores">Computadores</a></li>
+                        <li><a href="categoria.html?cat=gadgets">Gadgets</a></li>
+                        <li><a href="categoria.html?cat=games">Games</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> contato@tecbrasil.com.br</li>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tec Brasil. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <button class="close-modal" id="closeSearchModal"><i class="fas fa-times"></i></button>
+            <h3>Buscar no Tec Brasil</h3>
+            <div class="search-form">
+                <input type="text" id="modalSearchInput" placeholder="Digite sua busca...">
+                <button type="button" id="modalSearchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
